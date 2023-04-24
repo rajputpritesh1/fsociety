@@ -27,17 +27,20 @@
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand robot-text" href="#">
-            <img src="./favicon/favicon-96x96.png" width="30" height="30" class="d-inline-block align-top" alt="fsociety">
+            <img src="./favicon/favicon-96x96.png" width="30" height="30" class="d-inline-block align-top"
+                alt="fsociety">
             <span>fsociety</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -58,9 +61,9 @@
         <div class="px-3 pt-3 pb-2 pt-md-5 mx-auto text-center">
             <h1 class="display-4 robot-text">fsociety</h1>
             <p class="py-2">
-                <button onclick="watch()" type="button" class="btn btn-sm robot-btn">Watch</button>
-                <button onclick="star()" type="button" class="btn btn-sm robot-btn">Star</button>
-                <button onclick="fork()" type="button" class="btn btn-sm robot-btn">Fork</button>
+                <button id="tab-btn" onclick="watch()" type="button" class="btn btn-sm robot-btn">Watch</button>
+                <button id="tab-btn" onclick="star()" type="button" class="btn btn-sm robot-btn">Star</button>
+                <button id="tab-btn" onclick="fork()" type="button" class="btn btn-sm robot-btn">Fork</button>
             </p>
             <p class="lead">A Penetration Testing Framework with every script that a hacker needs.</p>
             <p class="lead">Contains all tools used in the Mr. Robot TV series</p>
@@ -141,18 +144,61 @@
             <kbd>bash <(wget -qO- https://git.io/vAtmB)</kbd>
         </div>
         <hr class="robot-hr mt-md-5">
+
         <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="contributors">
             <p class="robot-text robot-logo">Contributors</p>
-            <a href="https://github.com/Manisso"><img src="https://avatars0.githubusercontent.com/u/16539311?s=200" class="rounded" alt="Manisso" style="padding: 1rem;"></a>
-            <a href="https://github.com/CRO-THEHACKER"><img src="https://avatars3.githubusercontent.com/u/36890141?s=200" class="rounded" alt="CRO-THEHACKER" style="padding: 1rem;"></a>
-            <a href="https://github.com/huangsam"><img src="https://avatars1.githubusercontent.com/u/515617?s=200" class="rounded" alt="huangsam" style="padding: 1rem;"></a>
-            <a href="https://github.com/alexcreek"><img src="https://avatars1.githubusercontent.com/u/3383123?s=200" class="rounded" alt="alexcreek" style="padding: 1rem;"></a>
-            <a href="https://github.com/mswell"><img src="https://avatars1.githubusercontent.com/u/2567185?s=200" class="rounded" alt="mswell" style="padding: 1rem;"></a>
-            <a href="https://github.com/jackric"><img src="https://avatars1.githubusercontent.com/u/259713?s=200" class="rounded" alt="jackric" height="232" width="232" style="padding: 1rem;"></a>
-            <a href="https://github.com/Ev3"><img src="https://avatars1.githubusercontent.com/u/2741688?s=200" class="rounded" alt="Ev3" style="padding: 1rem;"></a>
-            <a href="https://github.com/RyanFilho"><img src="https://avatars1.githubusercontent.com/u/11152542?s=200" class="rounded" alt="RyanFilho" style="padding: 1rem;"></a>
-            <a href="https://github.com/gabru-md"><img src="https://avatars1.githubusercontent.com/u/25414121?s=200" class="rounded" alt="gabru-md" style="padding: 1rem;"></a>
-            <a href="https://github.com/jdrago999"><img src="https://avatars1.githubusercontent.com/u/37591?s=200" class="rounded" alt="jdrago999" style="padding: 1rem;"></a>
+
+            <div class="c-main container my-3 p-2">
+                <!-- Manisso -->
+                <div class="hr-card">
+                    <a href="https://github.com/Manisso"><img src="https://avatars0.githubusercontent.com/u/16539311?s=200" class="rounded" alt="Manisso"></a>
+                </div>
+
+                <!-- CRO-THEHACKER -->
+                <div class="hr-card">
+                    <a href="https://github.com/CRO-THEHACKER"><img src="https://avatars3.githubusercontent.com/u/36890141?s=200" class="rounded" alt="CRO-THEHACKER"></a>
+                </div>
+
+                <!-- huangsam -->
+                <div class="hr-card">
+                    <a href="https://github.com/huangsam"><img src="https://avatars1.githubusercontent.com/u/515617?s=200" class="rounded" alt="huangsam"></a>
+                </div>
+
+                <!-- alexcreek -->
+                <div class="hr-card">
+                    <a href="https://github.com/alexcreek"><img src="https://avatars1.githubusercontent.com/u/3383123?s=200" class="rounded" alt="alexcreek"></a>
+                </div>
+
+                <!-- mswell -->
+                <div class="hr-card">
+                    <a href="https://github.com/mswell"><img src="https://avatars1.githubusercontent.com/u/2567185?s=200" class="rounded" alt="mswell"></a>
+                </div>
+
+                <!-- jackric -->
+                <div class="hr-card">
+                    <a href="https://github.com/jackric"><img src="https://avatars1.githubusercontent.com/u/259713?s=200" class="rounded" alt="jackric"></a>
+                </div>
+
+                <!-- Ev3 -->
+                <div class="hr-card">
+                    <a href="https://github.com/Ev3"><img src="https://avatars1.githubusercontent.com/u/2741688?s=200" class="rounded" alt="Ev3"></a>
+                </div>
+
+                <!-- RyanFilho -->
+                <div class="hr-card">
+                    <a href="https://github.com/RyanFilho"><img src="https://avatars1.githubusercontent.com/u/11152542?s=200" class="rounded" alt="RyanFilho"></a>
+                </div>
+
+                <!-- gabru-md -->
+                <div class="hr-card">
+                    <a href="https://github.com/gabru-md"><img src="https://avatars1.githubusercontent.com/u/25414121?s=200" class="rounded" alt="gabru-md"></a>
+                </div>
+
+                <!-- jdrago999 -->
+                <div class="hr-card">
+                    <a href="https://github.com/jdrago999"><img src="https://avatars1.githubusercontent.com/u/37591?s=200" class="rounded" alt="jdrago999"></a>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="container pt-4 my-md-5 pt-md-5 border-top">
@@ -173,14 +219,21 @@
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="https://github.com/Manisso/fsociety/projects">Projects</a></li>
                     <li><a class="text-muted" href="https://github.com/Manisso/fsociety/issues">Issues</a></li>
-                    <li><a class="text-muted" href="https://github.com/Manisso/fsociety/blob/master/LICENSE">License</a></li>
+                    <li><a class="text-muted" href="https://github.com/Manisso/fsociety/blob/master/LICENSE">License</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script type="text/javascript">
         function watch() {
             document.location.href = 'https://github.com/Manisso/fsociety/subscription'
