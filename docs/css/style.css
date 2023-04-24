@@ -22,8 +22,26 @@ a:hover {
     font-size: 12px;
 }
 
+#tab-btn {
+    width: 75px;
+    padding: 5px;
+}
+#tab-btn:hover {
+    background: green;
+}
 .robot-card {
     height: 125px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(153, 224, 197);
+    transition: all ease-in-out 300ms;
+}
+.robot-card:hover {
+    height: 125px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(153, 224, 197);
+    box-shadow: 1px 1px 1px 1px rgb(3, 118, 122);
+    transform: translateY(5px);
 }
 
 .robot-hr {
@@ -34,4 +52,28 @@ a:hover {
 .robot-btn {
     color: white;
     background-color: red;
+}
+
+.c-main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hr-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    transition: all ease-in-out 300ms;
+}
+.hr-card:hover {
+    transform: translateY(-5px);
+}
+.hr-card img {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid lightskyblue;
 }
